@@ -23,8 +23,10 @@ export const ProductCard = ({
         height="64px"
         alt="goblin"
       />
+
       <p>{datum.name}</p>
       <p>{datum.price} Zm</p>
+      
       {isInCart ? (
         <button disabled className="nes-btn is-disabled">
           Added to cart
@@ -39,6 +41,7 @@ export const ProductCard = ({
           Add to cart
         </button>
       )}
+      
     </div>
   )
 }
