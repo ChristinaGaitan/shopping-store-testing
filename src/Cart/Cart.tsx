@@ -16,6 +16,7 @@ export const Cart = () => {
   return (
     <section className="nes-container with-title is-centered">
       <h3 className="title">Cart Summary</h3>
+
       <div className="cart-items">
         {products.map((datum) => (
           <CartItem
@@ -26,6 +27,7 @@ export const Cart = () => {
         ))}
         <p>Total: {totalPrice()} Zm</p>
       </div>
+      
       <div>
         <Link to="/checkout">
           <button className="nes-btn is-primary">
