@@ -15,8 +15,10 @@ export const CartItem = ({ product, removeFromCart }: CartItemProps) => {
         height="64px"
         alt={product.name}
       />
+
       <p>{product.name}</p>
       <p>{product.price} Zm</p>
+      
       <button
         onClick={() => {
           removeFromCart(product)
